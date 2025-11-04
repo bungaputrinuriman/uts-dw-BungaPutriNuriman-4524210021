@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>UTS - Form Pre-Order Apparel</title>
+</head>
+
+<body>
+  <header>
+    <h1>Form Pre-Order Apparel</h1>
+  </header>
+
+  <main>
+    <section id="form-section">
+      <form>
+        <label for="nama">Nama Pemesan:</label>
+        <input type="text" id="nama" placeholder="Masukkan nama kamu" />
+
+        <label for="produk">Produk yang Dipesan:</label>
+        <input type="text" id="produk" placeholder="Contoh: Kaos Konser Hope" />
+
+        <label for="warna">Warna:</label>
+        <input type="text" id="warna" placeholder="Contoh: Hitam" />
+
+        <label for="ukuran">Ukuran:</label>
+        <input list="ukuranList" id="ukuran" placeholder="Pilih ukuran" />
+        <datalist id="ukuranList">
+          <option value="S"></option>
+          <option value="M"></option>
+          <option value="L"></option>
+          <option value="XL"></option>
+          <option value="XXL"></option>
+        </datalist>
+
+        <label for="jumlah">Jumlah Barang:</label>
+        <input type="number" id="jumlah" min="1" value="1" />
+
+        <button type="button" id="tombol-reset">Reset Form</button>
+      </form>
+    </section>
+
+    <section id="preview-section">
+      <h2>Pratinjau Pesanan</h2>
+      <article class="preview-card">
+        <p><strong>Nama Pemesan:</strong> <span id="preview-nama">-</span></p>
+        <p><strong>Produk:</strong> <span id="preview-produk">-</span></p>
+        <p><strong>Warna:</strong> <span id="preview-warna">-</span></p>
+        <p><strong>Ukuran:</strong> <span id="preview-ukuran">-</span></p>
+        <p><strong>Jumlah:</strong> <span id="preview-jumlah">-</span></p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dibuat oleh Bunga Putri Nuriman</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
